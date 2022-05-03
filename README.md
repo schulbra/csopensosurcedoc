@@ -1,28 +1,161 @@
+<h1 align="center">SpaceX REST API</h1>
 <p align="center"><img src="https://live.staticflickr.com/65535/49185149122_37f5c52e43_k.jpg"></p>
 
-<h1 align="center">SpaceX REST API</h1>
 
-<h3 align="center">
-Open Source REST API for launch, rocket, core, capsule, starlink, launchpad, and landing pad data.
-</h3>
+<p align="LEFT">
+ <table id="tableForm2">
+ <thead>
+ <tr>
+  <th></th>
+ </tr>
+ 
+ <tr>
+  <td><label for="medID"><a href="https://hub.docker.com/r/jakewmeyer/spacex-api/"><img src="https://img.shields.io/docker/pulls/jakewmeyer/spacex-api?style=flat-square"></a></label></td>
+  <td><label for="id"><a href="https://github.com/r-spacex/SpaceX-API/actions?query=workflow%3ATest"><img src="https://img.shields.io/github/workflow/status/r-spacex/SpaceX-API/Test?style=flat-square"></a></label></td>
+  <td><label for="medID"><a href="https://github.com/r-spacex/SpaceX-API/releases"><img src="https://img.shields.io/github/release/r-spacex/SpaceX-API.svg?longCache=true&style=flat-square"></a></label></td>
+  <td><label for="medID"><a href="https://en.wikipedia.org/wiki/Representational_state_transfer"><img src="https://img.shields.io/badge/interface-REST-brightgreen.svg?longCache=true&style=flat-square"></a></label></td>
+ </tr>
 
-<p align="center">
-<a href="https://github.com/r-spacex/SpaceX-API/actions?query=workflow%3ATest"><img src="https://img.shields.io/github/workflow/status/r-spacex/SpaceX-API/Test?style=flat-square"></a>
-<a href="https://hub.docker.com/r/jakewmeyer/spacex-api/"><img src="https://img.shields.io/docker/pulls/jakewmeyer/spacex-api?style=flat-square"></a>
-<a href="https://github.com/r-spacex/SpaceX-API/releases"><img src="https://img.shields.io/github/release/r-spacex/SpaceX-API.svg?longCache=true&style=flat-square"></a>
-<a href="https://en.wikipedia.org/wiki/Representational_state_transfer"><img src="https://img.shields.io/badge/interface-REST-brightgreen.svg?longCache=true&style=flat-square"></a>
+ <tr>
+  <td><label for="medID"><a href="docs/README.md">Docs</a></label></td>
+  <td><label for="id"><a href="docs/clients.md">API Clients</a></label></td>
+  <td><label for="medID"><a href="docs/apps.md">Apps</a></label></td>
+  <td><label for="medID"> <a href="https://status.spacexdata.com">Status</a></a></label></td>
+ </tr>
+
+ </thead>
+ </table>
+
+
+
+
+
+
+
+
+
+
 </p>
 
-<h4 align="center">
-  <i>
-    We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Space Exploration Technologies Corp (SpaceX), or any of its subsidiaries or its affiliates. The names SpaceX as well as related names, marks, emblems and images are registered trademarks of their respective owners.
+
+
+<h3 align="LEFT">
+Project is:
+</h3>
+
+<h4 align="LEFT">
+<i>
+  An Open Source REST API for launch, rocket, core, capsule, starlink, launchpad, and landing pad data.
   </i>
 </h4>
 
-<h3 align="center">
-<a href="docs/README.md">Docs</a> - <a href="docs/clients.md">API Clients</a> - <a href="docs/apps.md">Apps</a> - <a href="https://status.spacexdata.com">Status</a> - <a href="https://backups.spacexdata.com">Database Dumps</a>
-<br/>
+<h3 align="LEFT">
+Project is NOT:
 </h3>
+<h4 align="LEFT">
+  <i>
+    Affiliated, associated, authorized, endorsed by, or in any way officially connected with Space Exploration Technologies Corp (SpaceX), or any of its subsidiaries or its affiliates. The names SpaceX as well as related names, marks, emblems and images are registered trademarks of their respective owners.
+  </i>
+</h4>
+
+
+<h3 align="LEFT">
+How To Use:
+</h3>
+<h4 align="LEFT">
+ <p><b><i> **Already know what an API is? Skip to Usage below! </b></p></i>
+ <p><b> Whats an API and how do I make sense of any of this? </b></p>
+ <p><b> API is an abbreviation for Application Programming Interface which is a collection of communication protocols and subroutines used by various programs to communicate between them. A programmer can make use of various API tools to make its program easier and simpler. Also, an API facilitates the programmers with an efficient way to develop their software programs.
+ Thus in simpler terms, an API helps two programs or applications to communicate with each other by providing them with necessary tools and functions. It takes the request from the user and sends it to the service provider and then again sends the result generated from the service provider to the desired user.
+ </b></p>
+
+ <b><p> A developer extensively uses API’s in his software to implement various features by using an API call without writing the complex codes for the same. We can create an API for an operating system, database systems, hardware system, for a JavaScript file or similar object oriented files. Also, an API is similar to a GUI(Graphical User Interface) with one major difference. Unlike GUI’s, an API helps the software developers to access the web tools while a GUI helps to make a program easier to understand by the users. (AkshitaKumawat, 2018)
+</b></p>
+
+<p><b>
+ This project is a REST API, which in simple terms is a means for allowing you to access various records
+ related to SpaceX.
+</b></p>
+
+<form id="showTable">
+             <table id="tableForm2">
+               <thead>
+                <tr>
+                  <th>Example:</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                 <td><label for="id"><b>____________________</b></label></td>
+                </tr>
+                <tr>
+                 <td><label for="id"><b>GET One Capsule:</b></label></td>
+                                   <td> =| </td>
+                 <td><label for="id">Obtain all data on one specified capsule</label></td>
+                </tr>
+                <tr>
+                 <td><label for="disease"> Outline of Comnmand   </label></td>
+                  <td> =| </td>
+                 <td><label for="id">https://api.spacexdata.com/v3/capsules/{{capsule_serial}}</label></td>
+                </tr>
+                <tr>
+                   <td><label for="disease">                 capsule_serial   </label></td>
+                   <td> =| </td>
+                   <td><label for="disease">capsules serial id #</label></td>
+                </tr>
+                <tr>
+                   <td><label for="disease">           sample capsule ID   </label></td>
+                                      <td> =| </td>
+                   <td><label for="disease">c112 </label></td>
+                </tr>
+                <tr>
+                   <td><label for="disease">                        Variable type   </label></td>
+                                      <td> =| </td>
+                   <td><label for="disease">String</label></td>
+                </tr>
+                                <tr>
+                 <td><label for="id"><b>____________________</b></label></td>
+                </tr>
+                <tr>
+                     <td><label for="id"><b>Command/Request:</b></label></td>
+                     <td> =| </td>
+                     <td><label for="id">  curl --location --request GET 'https://api.spacexdata.com/v3/capsules/C112 </label></td>
+                </tr>
+                                <tr>
+                 <td><label for="id"><b>____________________</b></label></td>
+                </tr>
+                <tr>
+                     <td><label for="id"><b>Command/Response:</b></label></td>
+                </tr>
+                <tr><td>{</td> </tr>
+                <tr><td> " capsule_serial": "C112",</td> </tr>
+                 <tr><td>" capsule_id": "dragon1",</td> </tr>
+                 <tr><td>" status": "active",</td> </tr>
+                 <tr><td>" original_launch": "2017-02-19T14:39:00.000Z",</td> </tr>
+                 <tr><td>" original_launch_unix": 1487515140,</td> </tr>
+                <tr><td> " missions": [</td> </tr>
+                <tr><td>  {</td> </tr>
+                  <tr><td>   " name": "CRS-10",</td> </tr>
+                <tr><td>      " flight": 36</td> </tr>
+                 <tr><td>}</td> </tr>
+                <tr><td> ],</td> </tr>
+                <tr><td>" landings": 1,</td> </tr>
+                <tr><td>" type": "Dragon 1.1",</td> </tr>
+                <tr><td>" details": null,</td> </tr>
+                <tr><td>" reuse_count": 0</td> </tr>
+                <tr>
+                                <tr>
+                 <td><label for="id"><b>____________________</b></label></td>
+                </tr>
+                <td><label for="medID"><a href="https://www.geeksforgeeks.org/introduction-to-apis/">Learn More About APIS Here</a></label></td>
+                </tr>
+  </thead>
+ </table> 
+</h4>
+<form id="showTable">
+
+
+
 
 ## Usage
 
